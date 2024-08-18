@@ -8,7 +8,7 @@
 function countVowels(str) {
     // Your code here
     let numberOfVowels = 0;
-    constVowelString = "AEIOUaeiou";
+    const VowelString = "AEIOUaeiou";
 
     for(let i=0; i<str.length; i++) {
       if(constVowelString.includes(str[i])) numberOfVowels++;
