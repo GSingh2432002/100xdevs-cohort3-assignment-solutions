@@ -9,13 +9,15 @@ There is no automated test for this one, this is more for you to understand time
 */
 
 function calculateTime(n) {
-  const startTime = Date.now();
+  // const startTime = Date.now();
+  const startTime = performance.now(); // this functions provides more precise timing measurement than Date.now()
   let sum = 0;
   for (let i = 1; i <= n; i++) {
     sum += i;
   }
 
-  const endTime = Date.now();
+  // const endTime = Date.now();
+  const endTime = performance.now(); // this functions provides more precise timing measurement than Date.now()
   const operationTime = (endTime - startTime) / 1000;
   console.log(`Time taken to calculate sum from 1-${n} is ${operationTime} seconds`);
 }
